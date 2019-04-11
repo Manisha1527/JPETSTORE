@@ -5,6 +5,9 @@ node {
   stage("build"){
       sh label: '', script: 'mvn clean install'
   }
+  stage("Testing"){
+  echo("TESTING DONE");
+  }
   
   
 }
